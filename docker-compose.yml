@@ -17,3 +17,5 @@ mysqldb:
         - "3306:3306"
       environment:
         MYSQL_ROOT_PASSWORD: rootpass
+      volumes:
+        - ./build/mysql:/docker-entrypoint-initdb.d
