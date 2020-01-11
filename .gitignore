@@ -4,3 +4,4 @@ www/var/*
 .idea
 
 /www/vendor/
+.phpunit.result.cache
