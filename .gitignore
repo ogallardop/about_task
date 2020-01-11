@@ -1,2 +1,6 @@
 logs/
+www/var/*
+
 .idea
+
+/www/vendor/
