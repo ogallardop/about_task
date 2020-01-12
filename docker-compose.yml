@@ -8,7 +8,9 @@ apache:
     volumes:
       - ./www:/var/www/html
       - ./logs:/var/log/apache2
-  
+    command:
+      - composer install --ignore-platform-reqs
+
 mysqldb:
       image: mysql:5.7.25
       command: --default-authentication-plugin=mysql_native_password
