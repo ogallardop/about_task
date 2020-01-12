@@ -1,0 +1,16 @@
+{
+    "require": {
+        "symfony/http-kernel": "^5.0",
+        "symfony/routing": "^5.0",
+        "symfony/orm-pack": "^1.0",
+        "symfony/dependency-injection": "^5.0",
+        "jms/serializer-bundle": "^3.5",
+        "sensio/framework-extra-bundle": "^5.5",
+        "symfony/http-client": "^5.0",
+      "ext-json": "*"
+    },
+    "require-dev": {
+        "symfony/maker-bundle": "^1.14",
+        "symfony/phpunit-bridge": "^5.0"
+    }
+}
