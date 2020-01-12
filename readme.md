@@ -41,3 +41,41 @@ Create backend CRUD operations running on REST API, about Customer entity with t
 2. `make up` to run the project and attach tty or `make run` to run in background. It will be accessible on `http://localhost`
 
 ### CURL Examples
+
+# Get Customer
+```
+curl --location --request GET 'localhost/web/index.php/customer/1' 
+```
+
+# Create Customer
+```
+curl --location --request POST 'localhost/web/index.php/customer' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "Oscar",
+    "email": "oscar.gallardo@outlook.com",
+    "status": "Registered",
+    "country": "Germany",
+    "address": "Osloer 57",
+    "postalCode": "10825"
+}'
+```
+# Update Customer
+```
+curl --location --request PUT 'localhost/web/index.php/customer/2' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "David",
+    "email": "oscar.gallardo@outlook.com",
+    "status": "Registered",
+    "country": "Germany",
+    "address": "Osloer 57",
+    "postalCode": "10825"
+}'
+```
+
+# Delete Customer
+```
+curl --location --request DELETE 'localhost/web/index.php/customer/2' \
+--header 'Content-Type: application/json'
+```
