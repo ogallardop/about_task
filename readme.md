@@ -40,6 +40,9 @@ Create backend CRUD operations running on REST API, about Customer entity with t
 
 2. `make up` to run the project and attach tty or `make run` to run in background. It will be accessible on `http://localhost`
 
+3. `make deps` to install the project dependencies
+
+
 ### CURL Examples
 
 # Get Customer

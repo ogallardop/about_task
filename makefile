@@ -12,3 +12,6 @@ up: ## Start all services
 
 cli:
 	@docker-compose exec apache /bin/bash
+
+deps:
+	@docker exec -it about_task_apache_1 composer install
